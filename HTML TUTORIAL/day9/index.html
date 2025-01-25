@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Positioning Example</title>
+
+  <style>
+    .container {
+
+      position: relative;
+      /* height: 800px; */
+      width: 700px;
+      background: lightgray;
+      border: solid 10px yellow;
+    }
+
+    .sticky-box {
+      position: sticky;
+      top: 0px;
+      background-color: slategray;
+      padding: 50px;
+      border: solid 1px darkolivegreen;
+    }
+
+
+    .static-box {
+      position: static;
+      background-color: red;
+      color: #fff;
+      padding: 40px;
+      border: solid 1px blue;
+    }
+
+    .relative-box {
+      position: relative;
+      top: 20px;
+      background: blue;
+      left: 130px;
+    }
+
+    .absolute-box {
+      background-color: rgba(253, 3, 253, 0.343);
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      width: 500px;
+      padding: 30px;
+      border-radius: 20px;
+      border: solid 1px purple;
+      text-align: justify;
+      line-height: 30px;
+      text-shadow: 5px 3px 3px #3e0101;
+      box-shadow: 10px 10px 30px #00000054;
+      transform: translateX(-50%);
+
+    }
+
+    .absoluteContainerWrapper {
+
+      margin-top: 100px;
+      height: 500px;
+      width: 100%;
+      background: rgba(211, 211, 211, 0.427);
+      position: relative;
+    }
+
+    .zindex-box{
+      position: absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      z-index: 1;
+      background-color: slategray;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .zindex-box-behind{
+      position: absolute;
+      top:53%;
+      left:55%;
+      transform: translate(-50%,-50%);
+      z-index: 2;
+      background-color: rgb(11, 67, 123);
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .zindex-box-behind2{
+      position: absolute;
+      top:55%;
+      left:58%;
+      transform: translate(-50%,-50%);
+      z-index: 3;
+      background-color: rgb(3, 225, 177);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .fixed-box{
+      background: seagreen;
+      padding: 100px;
+      font-size: 1rem;
+      color: #fff;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <p class="sticky-box">This is a sticky box. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam velit neque
+    corrupti beatae in dolorem? Consequuntur molestiae quos provident in.</p>
+  <h1>CSS Positioning Example</h1>
+
+  <h1>CSS Positioning Example</h1>
+  <h1>CSS Positioning Example</h1>
+  <h1>CSS Positioning Example</h1>
+  <h1>CSS Positioning Example</h1>
+  <h1>CSS Positioning Example</h1>
+  <h1>CSS Positioning Example</h1>
+
+  <h1>CSS Positioning Example</h1>
+  <h1>CSS Positioning Example</h1>
+  <h1>CSS Positioning Example</h1>
+  <h1>CSS Positioning Example</h1>
+  <h1>CSS Positioning Example</h1>
+
+
+
+  <div class="container">
+
+    <div class="static-box">
+      This is Static Box.
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, enim commodi! Tempora consequatur quia officiis,
+        sint eveniet ad. Necessitatibus eos sunt consequatur aliquam tempora atque quo magni. Est nisi error tempore
+        quae. Culpa, corporis soluta. Asperiores consequuntur nemo consequatur, quibusdam minima similique itaque. Ab et
+        doloribus totam consectetur alias saepe.</p>
+    </div>
+    <div class="relative-box">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus modi, ut magnam aperiam velit eveniet eos
+        reiciendis incidunt dolore aliquam quisquam quis beatae a necessitatibus voluptatibus quas ad ducimus. Dolorem
+        eaque soluta quas commodi quaerat omnis et sed accusantium, veritatis unde totam dignissimos, provident veniam.
+        Molestiae nam velit commodi officiis sint neque vero ex fugiat expedita illo dolore consequuntur aspernatur odit
+        fuga impedit, architecto doloremque id ut doloribus pariatur odio harum. Laudantium, culpa, at quasi ut
+        recusandae tempore similique animi reiciendis in earum distinctio nisi alias est explicabo amet cupiditate error
+        reprehenderit voluptatem qui! Nihil nobis pariatur illum quidem laboriosam?</p>
+    </div>
+
+
+
+  </div>
+
+  <div class="absoluteContainerWrapper">
+
+
+    <div class="absolute-box">
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero voluptates doloribus sint dolores aliquam,
+        obcaecati eum veniam laudantium ex nisi, reprehenderit pariatur vitae accusamus illo vel ab nostrum quibusdam
+        eius, harum laborum recusandae neque a! Alias ipsam officiis quis minus ducimus eligendi repellendus quisquam
+        facere nemo iusto possimus provident, consectetur laborum ea sit soluta incidunt vel fuga veritatis ratione.
+        Pariatur soluta adipisci quia quibusdam nostrum optio impedit ex nam aspernatur. Reiciendis, magnam officiis
+        nulla iste excepturi est corrupti magni aut possimus reprehenderit mollitia culpa quia minus dolorum accusamus
+        placeat enim!</p>
+    </div>
+
+    <div class="zindex-box">
+      <h2>Zindex box</h2>
+    </div>
+    <div class="zindex-box-behind">
+      <h2>Zindex box behind</h2>
+    </div>
+    <div class="zindex-box-behind2">
+      <h2>Zindex box behind 2</h2>
+    </div>
+
+
+  </div>
+
+  <div class="fixed-box">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi repudiandae at ab iure eveniet eos beatae nisi ut quasi voluptatibus culpa neque error vero, eaque accusamus tenetur cupiditate quisquam, velit quis consequuntur et perferendis magni dolorem reprehenderit. Quaerat id velit laudantium nam fugiat. Nisi saepe natus temporibus aliquid nemo, corrupti doloremque totam rerum ex? Veritatis voluptatum pariatur libero. Nemo, deleniti ipsa debitis facilis repellat sequi tempore? Minima accusantium optio alias aperiam ratione. Sunt perferendis quae aliquam deserunt exercitationem, inventore optio. Exercitationem, sunt laudantium rem, iste quaerat ad facilis quas earum natus asperiores corporis ut id maiores debitis similique provident illum.</p>
+  </div>
+
+</body>
+
+</html>
