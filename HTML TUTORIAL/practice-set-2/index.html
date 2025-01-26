@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panda Yoga Studio</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .formSection {
+            background: linear-gradient(to right, rgb(1, 96, 248), rgb(1, 158, 32), rgb(1, 248, 92));
+            color: #000;
+            padding: 50px 30px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+           
+        }
+        .form{
+            padding: 50px;
+            border: solid 1px lightgray;
+            margin-top: 50px;
+            border-radius: 10px;
+            background: #d8d8d82a;
+            width:70%;
+      
+        }
+        .form-row{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            
+        }
+        .form-col{
+            width:50%;
+            margin-bottom: 10px;
+        }
+        .form-message{
+            width: 100%;
+            /* background-color: red; */
+        }
+        textarea, input{
+            width: 100%;
+            padding: 10px;
+            background: #ffffff87;
+            outline: none;
+            border: solid 1px transparent;
+        }
+       label{
+            margin-bottom: 5px;
+            display: block;
+            font-size: 0.8rem;
+            color: #333;
+        }
+        input::placeholder, textarea::placeholder{
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="badge">Pranayama</div>
+                <h1>Welcome To Yoga Studio</h1>
+                <p>Pranayama is a clean, flat and modern Yoga Studio & Meditation website Template. It's the perfect
+                    theme for anyone who wants to create a professional website for Yoga, Pilates, Meditation, Spa,
+                    Wellness, Sports & Health Websites.</p>
+                <div class="buttonGroup">
+                    <button class="btn1">Buy Now</button>
+                    <button class="btn2">Go to Demo</button>
+                </div>
+            </div>
+            <div class="col">
+                <img src="./img-1.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <section class="formSection">
+        <h1>Contact Us Form</h1>
+        <form action="" class="form">
+            <div class="form-row">
+                <div class="form-col">
+                    <label for="">First Name</label>
+                    <input type="text" placeholder="Enter Your First Name">
+                </div>
+                <div class="form-col">
+                    <label for="">Last Name</label>
+                    <input type="text" placeholder="Enter Your Last Name">
+                </div>
+                <div class="form-col">
+                    <label for="">Email</label>
+                    <input type="email" placeholder="Enter Your Email">
+                </div>
+                <div class="form-col">
+                    <label for="">Contact No</label>
+                    <input type="text" placeholder="Enter Your Contact No">
+                </div>
+                <div class="form-message">
+                    <label for="">Message</label>
+                    <textarea name="" id="" rows="4" placeholder="Write here your message"></textarea>
+                </div>
+                <button class="btn1" style="margin-top: 10px;">Submit</button>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
